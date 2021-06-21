@@ -3,13 +3,13 @@ package org.springframeworkguru.spring5jokesappv2.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframeworkguru.spring5jokesappv2.service.JokeService;
+import org.springframeworkguru.spring5jokesappv2.service.JokeServiceImpl;
 
 @Controller
 public class JokesController {
-    private final JokeService jokeService;
+    private final JokeServiceImpl jokeService;
 
-    public JokesController(JokeService jokeService) {
+    public JokesController(JokeServiceImpl jokeService) {
         this.jokeService = jokeService;
     }
 
